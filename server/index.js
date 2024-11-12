@@ -8,7 +8,6 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
-// mongodb connection
 mongoose
   .connect(process.env.MONGO)
   .then(() => {
